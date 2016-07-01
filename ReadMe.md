@@ -1,29 +1,20 @@
-COMMENTS
---------------------------------
+# COMMENTS
+
 I will give some dteails about this implementation.
 
-- I spend almost 8 hours for this implementation.
 - I used only third party jar such as JUnit and Mockito for unit test.
 - If you want to measure unit test coverage you should use 'mvn cobertura:cobertura' command
 - I used 'Should' for unit test classes and I configured cobertura to see my test classes in pom.xml
 - You can find cobertura coverage report in the RAR file in target folder.
 - Unit test coverage is %98.
 
-USAGE
---------------------------------
+# USAGE
+
 - You can use Number2SentenceMain to try the implementation
 
-ASSUMPTIONS
---------------------------------
-I did some assumptions
 
-- Logging should have been done but I did not use log4j or something else for logging and I did not write any log.
-- Normally, I develop unit tests and write the implementation and watch the logs if logs are enough.
-- I wrote integration test as unit test. I know that integration tests must be written with a BDD framework such as JBehave, Spock, Cucumber or a scripting language from outside such as Ruby, Groovy, I want to keep simple for this case.
-- In addition, integration test must be run from outside like blackbox testing but we have no interface. Of course this is not an application or service this is a simple module.
+# NEW FEATURES CAN BE ADDED
 
-NEW FEATURES CAN BE ADDED
---------------------------------
 Following feature can be added but I did not.
 
 - I added English and Turkish languages for this implementation but we can add more languages (wth different NumberLanguage implementations) with a simple change in LanguageFactory class.
@@ -39,5 +30,3 @@ Thats all, as you can see changing is only on Language classes and not in the im
 
 - If we read these keywords from a property file so we can easily create new languages with i8n mechanism.
 - Property files can be named with postfix en-EN like most of MVC i18n message resource mechanism.
-
-
